@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { HealthCheckModule } from './modules/health-check/health-check.module';
+import { ApiAutoModule } from './modules/api-auto/api-auto.module';
 
 const envPath = ['.env'];
 if (process.env.NODE_ENV === 'development') {
@@ -15,6 +16,7 @@ if (process.env.NODE_ENV === 'development') {
       envFilePath: envPath,
     }),
     HealthCheckModule,
+    ApiAutoModule,
   ],
   controllers: [],
   providers: [],

@@ -1,5 +1,9 @@
 import { Controller, Get } from '@nestjs/common';
-import { ApiInternalServerErrorResponse, ApiOkResponse, ApiTags } from '@nestjs/swagger';
+import {
+  ApiInternalServerErrorResponse,
+  ApiOkResponse,
+  ApiTags,
+} from '@nestjs/swagger';
 import { HealthDto } from '../../dtos/health.dto';
 
 @ApiTags('Health')
